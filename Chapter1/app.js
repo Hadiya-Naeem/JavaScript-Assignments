@@ -15,5 +15,4 @@
 // Question 6
 // alert("This is my html and css project.");
 
-// Question 7 (d)
 
