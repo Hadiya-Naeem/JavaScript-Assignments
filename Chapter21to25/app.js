@@ -92,3 +92,110 @@
 // document.write("Result: " + result);
 
 // Question 13
+// var userName = prompt("Enter your user name:");
+
+// for (var i = 0; i < userName.length; i++) {
+
+//     var code = userName.charCodeAt(i);
+
+//     if (code == 64 || code == 46 || code == 33) {
+//         alert("Please enter a valid user name.");
+//         break;
+//     }
+// }
+
+// Question 14
+
+// var bakery = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// var userInput = prompt("What do you want");
+
+// var found = false;
+
+// for (var i = 0; i < bakery.length; i++) {
+//     if (bakery[i] === userInput.toLowerCase()) {
+//         found = true;
+//         break;
+//     }
+// }
+
+// if (found) {
+//     alert(userInput + " is available at index " + i + " in our bakery");
+// } else {
+//     alert(userInput + " is not available ");
+// }
+
+// Question 15
+
+// var password = prompt("Enter your password:");
+
+// var found = true;
+
+
+// if (password.length < 6) {
+//     alert("Password must be at least 6 characters long");
+//     found = false;
+// }
+
+
+// var firstCode = password.charCodeAt(0);
+
+// if (firstCode >= 48 && firstCode <= 57) {
+//     alert("Password cannot begin with a number");
+//     found = false;
+// }
+
+
+// for (var i = 0; i < password.length; i++) {
+
+//     var code = password.charCodeAt(i);
+
+//     if (!(
+//         (code >= 48 && code <= 57) ||
+//         (code >= 65 && code <= 90) ||
+//         (code >= 97 && code <= 122)
+//     )) {
+//         alert("Password should contain only letters and numbers");
+//         found = false;
+//         break;
+//     }
+// }
+
+// if (found) {
+//     alert("Valid password");
+// }
+
+// Question 16
+
+// var University = "University of Karachi";
+
+// var splitted = University.split("");
+
+// for (var i = 0; i < splitted.length; i++) {
+//     document.write(splitted[i] + "<br>");
+// }
+
+// Question  17
+
+// var input = prompt("Enter your input:");
+
+// var lastCharacter = input.charAt(input.length - 1);
+// document.write("User Input: " + input + "<br/>")
+// document.write("Last character is: " + lastCharacter);
+
+// Question 18
+
+// var text = "The quick brown fox jumps over the lazy dog";
+
+// var updated = text.toLowerCase()
+
+// var count = 0;
+
+// for (var i = 0; i < updated.length; i++) {
+//     if (updated.slice(i, i+3) == "the") {
+//         count++;
+//     }
+// }
+
+// document.write("Text: " + text + "<br>");
+// document.write("There are " + count + " occurrences of word 'the'");
