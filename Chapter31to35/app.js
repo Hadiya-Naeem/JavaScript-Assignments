@@ -111,3 +111,24 @@
 
 // Question 14
 
+// let customerName = prompt("Enter your name");
+// let numberOfUnits = Number(prompt("Enter number of charges"));
+// let chargesPerUnit = Number(prompt("Enter charges per unit"));
+
+//  let monthNames = ["January", "February", "March", "April", "May", "June",
+//               "July", "August", "September", "October", "November", "December"];
+// let date = new Date()
+// let month = date.getMonth()
+// let currentMonth = monthNames[month]
+// let lateCharges = 350;
+
+// let netAmount = numberOfUnits * chargesPerUnit
+// let grossAmount  = netAmount + lateCharges
+
+// document.write("Customer Name: " + customerName + "<br/>");
+// document.write("Month: " + currentMonth + "<br/>");
+// document.write("Number of units: " + numberOfUnits + "<br/>");
+// document.write("Charges per unit: " + chargesPerUnit + "<br/><br/>");
+// document.write("Net amount payable (within due date): " + netAmount + "<br/>");
+// document.write("Late payment surcharges: " + lateCharges + "<br/>");
+// document.write("Gross amount payable (After due date): " + grossAmount + "<br/>");
