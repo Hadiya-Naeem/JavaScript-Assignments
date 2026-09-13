@@ -100,19 +100,19 @@
 //         return number * number;
 //     }
 
-//     var baseSquare = calculateSquare(base);
-//     var perpendicularSquare = calculateSquare(perpendicular);
+//     let baseSquare = calculateSquare(base);
+//     let perpendicularSquare = calculateSquare(perpendicular);
 
-//     var hypotenuse = Math.sqrt(baseSquare + perpendicularSquare);
+//     let hypotenuse = Math.sqrt(baseSquare + perpendicularSquare);
 
 //     return hypotenuse;
 // }
 
 
-// var base = prompt("Enter the base:");
-// var perpendicular = prompt("Enter the perpendicular:");
+// let base = prompt("Enter the base:");
+// let perpendicular = prompt("Enter the perpendicular:");
 
-// var result = calculateHypotenuse(Number(base), Number(perpendicular));
+// let result = calculateHypotenuse(Number(base), Number(perpendicular));
 
 // document.write("Hypotenuse = " + result);
 
@@ -123,7 +123,7 @@
 //     return width * height;
 // }
 
-// var area = calculateArea(10, 5);
+// let area = calculateArea(10, 5);
 
 // document.write("Area of rectangle = " + area);
 
@@ -132,16 +132,99 @@
 //     return width * height;
 // }
 
-// var width = 10;
-// var height = 5;
+// let width = 10;
+// let height = 5;
 
-// var area = calculateArea(width, height);
+// let area = calculateArea(width, height);
 
 // document.write("Area of rectangle = " + area);
 
 
 // Question 10
 
+// function checkPalindrome(str) {
+//     let reverse = str.split("").reverse().join("");
 
+//     if (str === reverse) {
+//         return "It is a palindrome";
+//     } else {
+//         return "It is not a palindrome";
+//     }
+// }
 
+// let word = prompt("Enter a word:");
+// alert(checkPalindrome(word));
 
+// Question  11
+
+// function capitalizeWords(str) {
+//     let words = str.split(" ");
+
+//     for (let i = 0; i < words.length; i++) {
+//         words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+//     }
+
+//     return words.join(" ");
+// }
+
+// let string = "the quick brown fox";
+// let result = capitalizeWords(string);
+
+// document.write("String: " + string + "<br />");
+// document.write("Captilize Word: "  + result);
+
+// Question  12
+
+// function findLongestWord(str) {
+//     let words = str.split(" ");
+//     let longestWord = "";
+
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i].length > longestWord.length) {
+//             longestWord = words[i];
+//         }
+//     }
+
+//     return longestWord;
+// }
+
+// let string = "Web Development Tutorial";
+// let longest = findLongestWord(string);
+
+// document.write("String: " + string + "<br />");
+// document.write("Longest Word: " + longest);
+
+// Question  13
+
+// function countLetter(str, letter) {
+//     let count = 0;
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// let result = countLetter("JSResourceS.com", "o");
+// alert(result);
+
+// Question  14
+
+// function calcCircumference(radius) {
+//     var circumference = 2 * Math.PI * radius;
+//     document.write("The circumference is " + circumference);
+// }
+
+// function calcArea(radius) {
+//     var area = Math.PI * radius * radius;
+//     document.write("The area is " + area);
+// }
+
+// var radius = +prompt("Enter the radius:");
+
+// calcCircumference(radius);
+// document.write("<br>");
+// calcArea(radius);
