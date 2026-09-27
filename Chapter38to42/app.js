@@ -1,16 +1,3 @@
-// let onBtn = document.querySelector("#on")
-// let bulbOff = document.querySelector("#bulboff")
-// onBtn.addEventListener("click", function() {
-//     console.log("hello")
-//     bulbOff.src = "./images/bulb.jpg"
-// })
-
-
-// let offBtn = document.querySelector("#off")
-// offBtn.addEventListener("click", function() {
-//     console.log("hello")
-//     bulbOff.src = "./images/bulb off.jpg"
-// })
 
 // Question 1
 // function power(a, b) {

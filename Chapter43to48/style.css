@@ -1,0 +1,21 @@
+#google{
+    width: 28%;
+}
+#iphone{
+    width: 33%;
+}
+.btn{
+    outline: none;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#plus{
+    background-color: green;
+}
+#minus{
+    background-color: red;
+}
