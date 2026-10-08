@@ -1,29 +1,49 @@
-// Question 1
-
-// let main = document.getElementById("main-content")
-// let mainChildrens = main.children
-// let renderElements = document.getElementsByClassName("render")
+// // Question 1
+// // i.
+// let mainContentElements = document.getElementById("mainContent")
+// // ii.
+// let childMainElement = mainContentElements.childNodes
+// // iii.
+// let renderElements = document.querySelectorAll(".render")
 // for(let i = 0; i < renderElements.length; i++){
-//     document.write(renderElements[i].innerHTML + "<br />")
+//     document.write(`InnerHtml of class render: ${renderElements[i].innerHTML}<br />`)
 // }
-// let fillValue = document.getElementById("first-name")
-//  let fullName = fillValue.innerHTML = "Hadiya"
-// console.log(fullName)
-// let lastValue = document.getElementById("last-name")
-//  let lastName = fillValue.innerHTML = "Naeem"
-// console.log(lastName)
-// let emailValue = document.getElementById("email")
-//  let email = fillValue.innerHTML = "nhadiya415@gmail.com"
-// console.log(email)
+// // iv.
+// let firstName = document.getElementById("firstName").value
+// firstName = "Hadiya"
+// // v.
+// let lastName = document.getElementById("lastName").value
+// lastName = "Naeem"
+// let email = document.getElementById("email").value
+// email = "hadiya@gmail.com"
 
-// Question 2
+// // Question  2
+// // i.
+// let form = document.getElementById("formContent").nodeType
+// document.write(`Node type of formContent is: ${form} <br />`)
+// // ii.
+// let lastNameNode = document.getElementById("lastName").nodeType
+// document.write(`Node type of lastName is: ${lastNameNode} <br /><br />`)
+// // iii.
+// let lastNamed = document.getElementById("lastName")
+// lastNamed.innerHTML = "new text"
 
-let nodeTypefirst = document.getElementById("form-content").nodeType
-document.write("Node Type of form-content = "+ nodeTypefirst + "<br />")
-let nodeTypelast = document.getElementById("last-name").nodeType
-document.write("Node Type of last-name = "+ nodeTypelast + "<br />")
-let lastNameChild =  document.getElementById("last-name").childNodes
-document.write("child nodes of last-name" + lastNameChild.length + "<br />")
-let firstChildMain = document.getElementById("main-content").firstChild
-let lastChildMain = document.getElementById("main-content").lastChild
-document.write("first child of main-content = " + firstChildMain + "<br />")
+// // iv.
+// let mainFirstChild = mainContentElements.firstElementChild.innerHTML
+// document.write(`First Element of maincontent: ${mainFirstChild} <br />`)
+
+// let mainLastChild = mainContentElements.lastElementChild.innerHTML
+// document.write(`First Element of maincontent: ${mainLastChild} <br /><br />`)
+// // v.
+// let previousmian = lastNamed.previousSibling.innerHTML
+// document.write(`Previous Sibling of lastName: ${previousmian} <br />`)
+
+// let nextMain = lastNamed.nextSibling.innerHTML
+// document.write(`Next Sibling of lastName: ${nextMain} <br /><br />`)
+// // vi.
+// let emailed = document.getElementById("email")
+// let parentNode = emailed.parentNode
+// document.write(`parent node of email is: ${parentNode} <br />`)
+
+// let emailNodeType = emailed.nodeType
+// document.write(`node type of email is: ${emailNodeType}`)

@@ -1,24 +1,17 @@
 // Question 1
 
-// let itemsArray = [
-//     {name: "juice", price: "50", quantity: "3"},
-//     {name: "cookie", price: "30", quantity: "9"},
-//     {name: "shirt", price: "880", quantity: "1"},
-//     {name: "pen", price: "100", quantity: "2"}
-// ];
-
-// let total = 0
-
-// itemsArray.forEach(function(item) {
-
-//     let itemTotal = Number(item.price) * Number(item.quantity)
-
-//    document.write(item.name + " total price = " + itemTotal + "<br />")
-
-//     total = total + itemTotal
-// })
-
-// document.write("Total price of all items = " + total)
+// var itemsArray =[
+//     {name:"juice",price:"50",quantity:"3"},
+//     {name:"cookie",price:"30",quantity:"9"},
+//     {name:"shirt",price:"880",quantity:"1"},
+//     {name:"pen",price:"100",quantity:"2"},
+// ]
+// let totalPrice = 0;
+// for(i=0; i<4; i++){
+//     console.log(`Price of ${itemsArray[i].name}s is: ${itemsArray[i].price*itemsArray[i].quantity}`)
+//     totalPrice += itemsArray[i].price*itemsArray[i].quantity
+// }
+// console.log(`Total price of items: ${totalPrice}`)
 
 // Question 2
 
@@ -57,65 +50,39 @@
 
 // Question 4
 
-function Person(name, gender, address, education, profession) {
-    this.name = name;
-    this.gender = gender;
-    this.address = address;
-    this.education = education;
-    this.profession = profession;
-}
+// function Person(name, gender, address, education, profession) {
+//     this.name = name;
+//     this.gender = gender;
+//     this.address = address;
+//     this.education = education;
+//     this.profession = profession;
+// }
 
-let form = document.querySelector("#populationForm");
-let records = document.querySelector("#records");
+// function addRecord() {
 
-let people = JSON.parse(localStorage.getItem("people")) || [];
+//     let name = document.getElementById("name").value;
+//     let address = document.getElementById("address").value;
+//     let education = document.getElementById("education").value;
+//     let profession = document.getElementById("profession").value;
 
-form.addEventListener("submit", function(event) {
+//     let gender = document.querySelector('input[name="gender"]:checked').value;
 
-    event.preventDefault();
+//     let person = new Person(
+//         name,
+//         gender,
+//         address,
+//         education,
+//         profession
+//     );
 
-    let name = document.querySelector("#name").value;
-    let gender = document.querySelector('input[name="gender"]:checked').value;
-    let address = document.querySelector("#address").value;
-    let education = document.querySelector("#education").value;
-    let profession = document.querySelector("#profession").value;
-
-    let person = new Person(
-        name,
-        gender,
-        address,
-        education,
-        profession
-    );
-
-    people.push(person);
-
-    localStorage.setItem("people", JSON.stringify(people));
-
-    displayRecords();
-
-    form.reset();
-});
-
-
-function displayRecords() {
-
-    records.innerHTML = "";
-
-    people.forEach(function(person, index) {
-
-        records.innerHTML += `
-            <div>
-                <h3>Record ${index + 1}</h3>
-                <p>Name: ${person.name}</p>
-                <p>Gender: ${person.gender}</p>
-                <p>Address: ${person.address}</p>
-                <p>Education: ${person.education}</p>
-                <p>Profession: ${person.profession}</p>
-                <hr>
-            </div>
-        `;
-    });
-}
-
-displayRecords();
+//     document.getElementById("records").innerHTML += `
+//         <p>
+//             Name: ${person.name}<br>
+//             Gender: ${person.gender}<br>
+//             Address: ${person.address}<br>
+//             Education: ${person.education}<br>
+//             Profession: ${person.profession}
+//         </p>
+//         <hr>
+//     `;
+// }
